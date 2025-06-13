@@ -3,6 +3,11 @@
 """
 
 import logging
+import os
+from dotenv import load_dotenv
+
+# 加载.env文件
+load_dotenv()
 
 # 配置日志
 logging.basicConfig(
@@ -14,10 +19,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # OpenAI API配置
-OPENAI_API_KEY = ""
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 # Pinecone API配置
-PINECONE_API_KEY = ""
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
 PINECONE_INDEX_NAME = "wh40kcodex"
 
 # 模型配置
@@ -28,7 +33,7 @@ DEFAULT_TOP_K = 10
 EMBADDING_MODEL = "text-embedding-ada-002"
 
 # LLM模型
-LLM_MODEL = "gpt-3.5-turbo"
+LLM_MODEL = "gpt-4o-mini"
 
 # rerank 模型
 RERANK_MODEL = "bge-reranker-v2-m3"
