@@ -14,10 +14,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # OpenAI API配置
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 
 # Pinecone API配置
-PINECONE_API_KEY = "pcsk_24Hcwu_NaKH8d4ZCPPkVe32FHbZcJrqXUY7s1o6xoeJLBvxE1dym9rHFzFuWj7JFCGt5pZ"
+PINECONE_API_KEY = ""
 PINECONE_INDEX_NAME = "wh40kcodex"
 
 # 模型配置
