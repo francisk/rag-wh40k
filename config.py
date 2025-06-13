@@ -1,0 +1,44 @@
+"""
+配置文件，用于管理项目范围内的公有字段和API密钥
+"""
+
+import logging
+
+# 配置日志
+logging.basicConfig(
+    level=logging.INFO,  # 设置日志级别为INFO
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 设置日志格式
+    handlers=[logging.StreamHandler()]  # 配置StreamHandler
+)
+
+logger = logging.getLogger(__name__)
+
+# OpenAI API配置
+OPENAI_API_KEY = "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"
+
+# Pinecone API配置
+PINECONE_API_KEY = "pcsk_24Hcwu_NaKH8d4ZCPPkVe32FHbZcJrqXUY7s1o6xoeJLBvxE1dym9rHFzFuWj7JFCGt5pZ"
+PINECONE_INDEX_NAME = "wh40kcodex"
+
+# 模型配置
+DEFAULT_TEMPERATURE = 0.7
+DEFAULT_TOP_K = 10
+
+# 嵌入模型
+EMBADDING_MODEL = "text-embedding-ada-002"
+
+# LLM模型
+LLM_MODEL = "gpt-3.5-turbo"
+
+# rerank 模型
+RERANK_MODEL = "bge-reranker-v2-m3"
+
+# 日志配置
+LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
+LOG_FILE = 'app.log'
+LOG_LEVEL = 'INFO'
+
+# 应用配置
+APP_TITLE = "战锤40K规则助手"
+APP_ICON = "⚔️"
+APP_HEADER = "" 
