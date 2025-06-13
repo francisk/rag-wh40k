@@ -43,6 +43,10 @@
 
 ## 日志配置
 - 日志级别设置为 `INFO`，格式为 `%(asctime)s - %(name)s - %(levelname)s - %(message)s`。
+## 可使用的桌游文档
+- 总规则中文版: https://assets.warhammer-community.com/warhammer40000_core&key_corerules_chn_24.09-czgt3rq37v.pdf
+- 总规FAQ：https://assets.warhammer-community.com/chi_wh40k_core&key_core_rules_updates_commentary_dec2024-r4d3ehrv6m-lbyydmwvw2.pdf
+- 赛季补丁: https://assets.warhammer-community.com/chi_04-06_warhammer_40000_core_rules_balance_dataslate-mcbpvplq49-fd0mqwnlxf.pdf 
 
 ## 注意事项
 - 确保在 `config.py` 中正确配置API密钥和模型名称。
